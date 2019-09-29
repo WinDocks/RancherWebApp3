@@ -1,5 +1,5 @@
 apiVersion: v1
-name: WindocksProxyReader
+name: WindocksSampleReader
 version: 1.0.1
 description: .Net App that reads data from Windocks SQL Server proxy
 home: https://www.windocks.com/
