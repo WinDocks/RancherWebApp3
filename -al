@@ -1,67 +1,0 @@
-[1mdiff --git a/values.yaml b/values.yaml[m
-[1mindex 6f63775..e00a013 100644[m
-[1m--- a/values.yaml[m
-[1m+++ b/values.yaml[m
-[36m@@ -1,52 +1,9 @@[m
-[31m-# Default values for windocks-sql-proxy.[m
-[31m-# This is a YAML-formatted file.[m
-[31m-# Declare variables to be passed into your templates.[m
-[31m-[m
-[31m-replicaCount: 1[m
-[31m-nameOverride: windocks-dotnetapp[m
-[31m-sqlserverHost: "windocks,3087"[m
-[31m-sqlserverPassword: "Pa55word!!"[m
-[31m-[m
-[31m-image:[m
-[31m-  repository: windocks/windocks-redis-demo-dotnetapp[m
-[31m-  tag: 1.0.1[m
-[31m-  pullPolicy: Always[m
-[31m-[m
-[31m-service:[m
-[31m-  type: LoadBalancer[m
-[31m-  port: 80[m
-[31m-  targetPort: 80[m
-[31m-[m
-[31m-ingress:[m
-[31m-  enabled: false[m
-[31m-  annotations: {}[m
-[31m-    # kubernetes.io/ingress.class: nginx[m
-[31m-    # kubernetes.io/tls-acme: "true"[m
-[31m-  path: /[m
-[31m-  hosts:[m
-[31m-    - chart-example.local[m
-[31m-  tls: [][m
-[31m-  #  - secretName: chart-example-tls[m
-[31m-  #    hosts:[m
-[31m-  #      - chart-example.local[m
-[31m-  [m
-[31m-resources: {}[m
-[31m-  # We usually recommend not to specify default resources and to leave this as a conscious[m
-[31m-  # choice for the user. This also increases chances charts run on environments with little[m
-[31m-  # resources, such as Minikube. If you do want to specify resources, uncomment the following[m
-[31m-  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.[m
-[31m-  # limits:[m
-[31m-  #  cpu: 100m[m
-[31m-  #  memory: 128Mi[m
-[31m-  # requests:[m
-[31m-  #  cpu: 100m[m
-[31m-  #  memory: 128Mi[m
-[31m-[m
-[31m-nodeSelector: {}[m
-[31m-[m
-[31m-tolerations: [][m
-[31m-[m
-[31m-affinity: {}[m
-[31m-[m
-[31m-webapp:[m
-[31m-  port: "80"[m
-\ No newline at end of file[m
-[32m+[m[32mapiVersion: v1[m[41m[m
-[32m+[m[32mname: WindocksSampleReader[m[41m[m
-[32m+[m[32mversion: 1.0.1[m[41m[m
-[32m+[m[32mdescription: .Net App that reads data from Windocks SQL Server proxy[m[41m[m
-[32m+[m[32mhome: https://www.windocks.com/[m[41m[m
-[32m+[m[32micon: https://windocks.com/img/windockslogo.png[m[41m[m
-[32m+[m[32mmaintainers:[m[41m[m
-[32m+[m[32m- name: WinDocks[m[41m[m
-[32m+[m[32m  email: support@windocks.com[m[41m[m
